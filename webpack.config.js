@@ -2,7 +2,10 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const WasmPackPlugin = require('@wasm-tool/wasm-pack-plugin')
 
+console.log(path.resolve(__dirname));
+
 module.exports = {
+    
     entry: './public/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
